@@ -2,8 +2,7 @@ from main import main
 
 
 def test_method():
-    assert main(3) == 8
-    print("test file")
+    assert main(2) == 8
 
 
 if __name__ == "__testfile__":
