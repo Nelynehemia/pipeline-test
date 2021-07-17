@@ -1,16 +1,16 @@
-# This is a sample Python script.
+import os
 
-# Press Ctrl+F5 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+List1 = [8, 9, 3, 6, 1, 10]
+List1.reverse()
+print("The reversed list is ", List1)
 
+List2 = [91, 67, 120, 34, 76, 54, 78, 87, 56, 64, 345]
+List2.sort()
+print("The sorted list is ", List2)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press F9 to toggle the breakpoint.
+List3 = []
+List3 = List1.copy()
+print("List3 =", List3)
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+indexvalue = List2[2:6]
+print("The index values are", indexvalue)
