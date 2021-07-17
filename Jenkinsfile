@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                print_hi(name)
             }
         }
         stage('Test') {
