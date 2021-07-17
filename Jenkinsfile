@@ -5,7 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                print_hi(name)
+                gv = load "main.py"
+                gv.print_hi(name)
             }
         }
         stage('Test') {
