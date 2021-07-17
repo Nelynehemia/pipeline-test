@@ -1,7 +1,7 @@
 import os
 
 
-def func():
+def main():
     List1 = [8, 9, 3, 6, 1, 10]
     List1.reverse()
     print("The reversed list is ", List1)
@@ -12,4 +12,4 @@ def func():
 
 
 if __name__ == "__main__":
-    func()
+    main()
