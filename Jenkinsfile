@@ -7,8 +7,8 @@ pipeline {
                 echo 'Building..'
                 script {
                     gv = load "main.py"
+                    gv.print_hi(name)
                 }
-                gv.print_hi(name)
             }
         }
         stage('Test') {
