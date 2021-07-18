@@ -15,9 +15,9 @@ pipeline {
             steps{
                 withCredentials([aws(accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'nelys3', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY')]) {
                     echo "in artifact to s3"
-                    //sh "aws s3 ls"
-                    //sh "aws s3 mb s3://cloudyeti-bucken-for-aws"
-                    //sh "aws s3 cp"
+                    sh "aws s3 ls"
+                    sh "aws s3 mb s3://nely-bucket"
+                    sh "aws s3 cp pipeline-test/main.py s3://nely-bucket"
                 }
             }
         }
