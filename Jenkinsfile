@@ -14,7 +14,7 @@ pipeline {
         stage('artifact to s3') {
             steps{
                     //echo 'artifact to s3'
-                s3Upload(file:'main.py', bucket:'nely-bucket', path:'')
+                s3Upload(file:'main.py', bucket:'nely-bucket', path:'.')
                     //sh 'aws s3 ls'
                     //sh 'aws s3 mb s3://nely-bucket'
                     //sh 'aws s3 cp pipeline-test/main.py s3://nely-bucket'
